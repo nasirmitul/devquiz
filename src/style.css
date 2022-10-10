@@ -93,3 +93,40 @@ nav.nav {
     bottom: -5px;
     transition: all .4s ease-in-out;
 }
+
+.nav .hamburger{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 660px) {
+    .nav .links {
+        display: none;
+    }
+    
+    .nav .hamburger {
+        display: block;
+    }
+
+    .nav .links.active {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        background:var(--primary);
+        height: calc(100vh - 70px);
+        width: 100%;
+        left: 0;
+        top: 70px;
+        display: grid;
+        place-items: center;
+        align-content: center;
+    }
+
+    .nav .links a{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+}

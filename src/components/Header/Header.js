@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../images/logo.png'
 
 const Header = () => {
+    const [responsive, setResponsive] = useState(false);
+
+    let windowWidth = window.innerWidth;
+    console.log(windowWidth);
     return (
         <div className='navbar'>
             <nav className='container nav'>
@@ -13,10 +17,15 @@ const Header = () => {
                     </div>
                 </Link>
 
-                <div className="links">
-                    <NavLink to='/home'>Home</NavLink>
-                    <NavLink to='/statistics'>Statistics</NavLink>
-                    <NavLink to='/blog'>Blog</NavLink>
+                <div className={`links ${(responsive) ? 'active' : undefined}`}>
+                    <NavLink onClick={() => setResponsive(!responsive)} to='/home'>Home</NavLink>
+                    <NavLink onClick={() => setResponsive(!responsive)} to='/statistics'>Statistics</NavLink>
+                    <NavLink onClick={() => setResponsive(!responsive)} to='/blog'>Blog</NavLink>
+                </div>
+                <div className="hamburger" onClick={() => setResponsive(!responsive)}>
+                    {
+                        responsive? <i class="fa-solid fa-xmark"></i> : <i className="fa-solid fa-bars"></i>
+                    }
                 </div>
             </nav>
         </div>
