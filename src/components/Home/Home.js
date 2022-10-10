@@ -11,7 +11,7 @@ const Home = () => {
             <HeroSection></HeroSection>
             <div className="quizzes">
                 <h2 className='quiz-title'>
-                    Choose any topic and Start
+                    Choose any topic and Start Quiz
                 </h2>
                 <div className="quiz-topic">
                     {

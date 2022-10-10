@@ -22,6 +22,12 @@
     margin: auto;
 }
 
+.quiz-container{
+    width: min(1000px, 90%);
+    margin: auto;
+    margin-top: 30px;
+}
+
 a {
     text-decoration: none;
 }
@@ -155,6 +161,10 @@ nav.nav {
 
 
 /* ================ Quiz Design ================ */
+.quizzes{
+    margin-bottom: 50px;
+}
+
 .quizzes .quiz-title{
     margin-top: 60px;
     margin-bottom: 20px;
@@ -167,7 +177,7 @@ nav.nav {
 
 .quiz-topic{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     grid-gap: 20px;
 }
 
@@ -207,6 +217,10 @@ nav.nav {
     opacity: .8;
 }
 
+.quiz .count-button a{
+    width: 100%;
+}
+
 .quiz .count-button button{
     padding: 8px 15px;
     background: var(--primary);
@@ -214,4 +228,53 @@ nav.nav {
     color: var(--text-color);
     border: none;
     cursor: pointer;
+    width: 100%;
+    transition: .4s;
+}
+
+.quiz .count-button button:hover{
+    background: var(--secondary);
+}
+
+
+/* ================ Quiz Question Design ================ */
+.quiz-topic-title{
+    position: relative;
+}
+
+.quiz-topic-title h3{
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--image-bg);
+    position: relative;
+    width:fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quiz-topic-title h3::after{
+    content: '';
+    position:absolute;
+    height: 2px;
+    width: 70%;
+    background: var(--image-bg);
+    left: 0;
+    bottom: -5px;
+}
+
+.total-question{
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    color: var(--primary);
+    margin-bottom: 30px;
+}
+
+.single-quiz{
+    border: 1px solid #686868;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
 }
