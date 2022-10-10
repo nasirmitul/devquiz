@@ -10,8 +10,11 @@
 :root {
     --primary: #6B5AE2;
     --secondary: #523ce2;
+    --image-bg: #34304e;
     --background: #ece9f5;
     --text-color: #FDFFFF;
+    --text-color-black: #414141;
+    --card-bg: #fdfafa;
 }
 
 .container {
@@ -39,12 +42,15 @@ body {
 .navbar {
     background: var(--primary);
     padding: 15px;
+    position: relative;
+    z-index: 2;
 }
 
 nav.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .nav .logo {
@@ -105,6 +111,7 @@ nav.nav {
 @media only screen and (max-width: 660px) {
     .nav .links {
         display: none;
+        position: relative;
     }
     
     .nav .hamburger {
@@ -129,4 +136,82 @@ nav.nav {
         font-size: 2rem;
         font-weight: 500;
     }
+}
+
+
+/* ================ Hero Section Design ================ */
+.hero{
+    width: 100%;
+}
+
+.hero .main-layout{
+    height: 700px;
+    background: var(--primary);
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+
+/* ================ Quiz Design ================ */
+.quizzes .quiz-title{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--image-bg);
+}
+
+
+.quiz-topic{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.quiz{
+    padding: 10px;
+    background: var(--card-bg);
+    width:100%;
+    border-radius: 10px;
+}
+
+.quiz .image img{
+    width: 100%;
+    background:var(--image-bg);
+    padding: 10px;
+    border-radius: 5px;
+    /* margin-bottom: 10px; */
+}
+
+.quiz .title h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primary);
+    text-align: center;
+}
+
+.quiz .count-button{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quiz .count-button .total{
+    font-size: .9rem;
+    font-weight: 500;
+    color: var(--image-bg);
+    text-align: center;
+    opacity: .8;
+}
+
+.quiz .count-button button{
+    padding: 8px 15px;
+    background: var(--primary);
+    border-radius: 5px;
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
 }

@@ -1,9 +1,28 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import HeroSection from '../HeroSection/HeroSection';
+import QuizTopic from './QuizTopic';
 
 const Home = () => {
+    const quizAllData = useLoaderData().data;
+
     return (
-        <div>
-            <h1>This is home</h1>
+        <div className='container'>
+            <HeroSection></HeroSection>
+            <div className="quizzes">
+                <h2 className='quiz-title'>
+                    Choose any topic and Start
+                </h2>
+                <div className="quiz-topic">
+                    {
+                        quizAllData.map(quizData => <QuizTopic
+                            key={quizData.id}
+                            quizData={quizData}
+                        ></QuizTopic>)
+                    }
+                </div>
+            </div>
+
         </div>
     );
 };

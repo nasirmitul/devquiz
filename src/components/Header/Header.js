@@ -5,8 +5,6 @@ import logo from '../../images/logo.png'
 const Header = () => {
     const [responsive, setResponsive] = useState(false);
 
-    let windowWidth = window.innerWidth;
-    console.log(windowWidth);
     return (
         <div className='navbar'>
             <nav className='container nav'>
@@ -24,7 +22,7 @@ const Header = () => {
                 </div>
                 <div className="hamburger" onClick={() => setResponsive(!responsive)}>
                     {
-                        responsive? <i class="fa-solid fa-xmark"></i> : <i className="fa-solid fa-bars"></i>
+                        responsive? <i className="fa-solid fa-xmark"></i> : <i className="fa-solid fa-bars"></i>
                     }
                 </div>
             </nav>
