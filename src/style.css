@@ -1,0 +1,95 @@
+/* ================ Basic Style Setup ================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary: #6B5AE2;
+    --secondary: #523ce2;
+    --background: #ece9f5;
+    --text-color: #FDFFFF;
+}
+
+.container {
+    width: min(1320px, 90%);
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background);
+}
+
+/* ================ Nav Bar Design ================ */
+.navbar {
+    background: var(--primary);
+    padding: 15px;
+}
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.nav .logo img {
+    width: 40px;
+    border: 2px solid var(--background);
+    border-radius: 5px;
+}
+
+.nav .logo .site-name {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.nav .links {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.nav .links a {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.nav .links a.active {
+    position: relative;
+    transition: all .4s ease-in-out;
+}
+
+.nav .links a.active::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: var(--background);
+    left: 0;
+    bottom: -5px;
+    transition: all .4s ease-in-out;
+}
