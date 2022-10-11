@@ -12,8 +12,9 @@ const HeroSection = () => {
             <div className="main-layout">
                 <div className="main-left">
                     <div className="left-content">
-                        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae quisquam consequatur voluptatum qui quasi debitis eos? Consequatur dicta maxime in!</p>
+                        <h1>Attend to the quiz and check your knowledge on that topic</h1>
+                        <p>The best way to ask questions, explore ideas, and let students show what they know. 
+                        </p>
 
                         <button>
                             <Link to='/blog'>Check Blogs</Link>
