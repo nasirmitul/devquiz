@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import Statistics from './components/Statistics/Statistics';
 import Layout from './layout/Layout';
 import QuizQuestion from './components/QuizQuestion/QuizQuestion';
+import Error from './components/Error/Error';
 
 function App() {
   const router = createBrowserRouter([
@@ -48,7 +49,7 @@ function App() {
     },
     {
       path: '*',
-      element: <div><h1>This is 404 page. go back to home <Link to='/'>Home</Link></h1></div>
+      element: <Error></Error>
     }
   ])
   return (

@@ -209,7 +209,7 @@ nav.nav {
 
 @media only screen and (max-width: 800px) {
     .hero .main-layout {
-        flex-direction:column;
+        flex-direction: column;
         margin-top: 50px;
     }
 
@@ -432,4 +432,42 @@ nav.nav {
 .option-select.selected {
     color: var(--primary);
     font-weight: 500;
+}
+
+
+/* ================ 404 Page Design ================ */
+
+.error {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error h1 {
+    background-image: url(images/error.jpg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 8rem;
+}
+
+.error .not-found{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--primary);
+}
+
+.error .redirect{
+    display:flex;
+    margin-top: 20px; 
+    gap: 4px;
+    font-size: 1rem;
+}
+
+.error .redirect a{
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: underline;
 }
