@@ -1,9 +1,9 @@
 # Project Name: DevQuiz
 
-### Live Website Link
+## Live Website Link
 [Live Website](https://devquiz-nasirmitul.netlify.app/)
 
-## Project Description
+### Project Description
 * This is an quiz related web application
 * Used react routes for routing
 * Loaded quiz data from api
