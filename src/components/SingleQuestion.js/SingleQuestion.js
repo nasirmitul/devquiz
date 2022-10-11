@@ -26,6 +26,7 @@ const SingleQuestion = ({questions, quizCount}) => {
                 {
                     options.map(option => <Options
                     option={option}
+                    correctAnswer={correctAnswer}
                     key={uniqueID()}
                     ></Options>)
                 }

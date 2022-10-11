@@ -6,8 +6,8 @@ const Header = () => {
     const [responsive, setResponsive] = useState(false);
 
     return (
-        <div className='navbar'>
-            <nav className='container nav'>
+        <div className='navbar container'>
+            <nav className='nav'>
                 <Link to='/'>
                     <div className="logo">
                         <img src={logo} />

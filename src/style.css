@@ -47,9 +47,12 @@ body {
 /* ================ Nav Bar Design ================ */
 .navbar {
     background: var(--primary);
-    padding: 15px;
+    padding: 15px 40px;
     position: relative;
     z-index: 2;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 0px rgba(108, 90, 226, 0.3);
 }
 
 nav.nav {
@@ -151,8 +154,6 @@ nav.nav {
 }
 
 .hero .main-layout {
-    height: 700px;
-    background: var(--background);
     position: relative;
     width: 100%;
     margin-top: 10px;
@@ -165,7 +166,6 @@ nav.nav {
     width: 50%;
 }
 
-
 .hero .main-layout .main-left h1 {
     font-size: 2.5rem;
     font-weight: 600;
@@ -175,7 +175,7 @@ nav.nav {
     width: 80%;
 }
 
-.hero .main-layout .main-left p{
+.hero .main-layout .main-left p {
     font-size: 1rem;
     font-weight: 400;
     color: var(--image-bg);
@@ -183,13 +183,18 @@ nav.nav {
     opacity: .8;
 }
 
-.hero .main-layout .main-left button{
+.hero .main-layout .main-left a {
+    color: var(--text-color);
+
+}
+
+.hero .main-layout .main-left button {
     padding: 8px 20px;
     font-size: 1rem;
     border: none;
     border-radius: 5px;
     background: var(--primary);
-    color: red !important;
+    cursor: pointer;
 }
 
 
@@ -201,6 +206,43 @@ nav.nav {
     width: 100%;
 }
 
+
+@media only screen and (max-width: 800px) {
+    .hero .main-layout {
+        flex-direction:column;
+        margin-top: 50px;
+    }
+
+    .hero .main-layout .main-left {
+        width: 100%;
+    }
+
+    .hero .main-layout .main-left h1 {
+        line-height: 45px;
+    }
+
+    .hero .main-layout .main-left a {
+        color: var(--text-color);
+    }
+
+    .hero .main-layout .main-left button {
+        padding: 8px 20px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        background: var(--primary);
+        cursor: pointer;
+    }
+
+
+    .hero .main-layout .main-right {
+        width: 100%;
+    }
+
+    .hero .main-layout .main-right img {
+        width: 80%;
+    }
+}
 
 /* ================ Quiz Design ================ */
 .quizzes {
@@ -381,6 +423,7 @@ nav.nav {
     background: var(--primary);
     border-radius: 50%;
 }
+
 
 .option-select {
     cursor: pointer;

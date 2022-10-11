@@ -15,6 +15,7 @@ const QuizQuestion = () => {
                 <h3>Quiz Topic: {name}</h3>
             </div>
             <p className='total-question'>Total {total} Question</p>
+            
             <div className="questions">
                 {
                     questions.map(question => <SingleQuestion
