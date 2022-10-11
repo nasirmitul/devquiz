@@ -24,6 +24,7 @@ const QuizQuestion = () => {
                     ></SingleQuestion>)
                 }
             </div>
+            
         </div>
     );
 };

@@ -1,11 +1,11 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import HeroSection from '../HeroSection/HeroSection';
+import Statistics from '../Statistics/Statistics';
 import QuizTopic from './QuizTopic';
 
 const Home = () => {
     const quizAllData = useLoaderData().data;
-
     return (
         <div className='container'>
             <HeroSection></HeroSection>
@@ -22,7 +22,6 @@ const Home = () => {
                     }
                 </div>
             </div>
-
         </div>
     );
 };

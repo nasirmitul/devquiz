@@ -14,7 +14,7 @@ const QuizTopic = ({ quizData }) => {
                 </div>
                 <div className="count-button">
                     <p className='total'>{total} question</p>
-                    <Link to={`quiz/${id}`}>
+                    <Link to={`/quiz/${id}`}>
                         <button>Start Quiz</button>
                     </Link>
                 </div>
