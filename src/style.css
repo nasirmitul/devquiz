@@ -507,3 +507,10 @@ nav.nav {
     text-align: justify;
 
 }
+
+/* ================ Chart Design ================ */
+.chart{
+    width: min(600px, 90%);
+    margin: auto;
+    margin-top: 50px;
+}
