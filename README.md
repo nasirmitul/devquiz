@@ -1,7 +1,7 @@
 # Project Name: DevQuiz
 
 ## Live Website Link
-[Live Website](hhttps://devquiz-nasirmitul.netlify.app/)
+[Live Website](https://devquiz-nasirmitul.netlify.app/)
 
 ### Project Description
 * This is an quiz related web application
